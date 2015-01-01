@@ -138,8 +138,6 @@ OnPreferenceClickListener{
 		feedback.setOnPreferenceClickListener(this);
 		Preference quit=findPreference("quit");
 		quit.setOnPreferenceClickListener(this);
-		Preference about=findPreference("about");
-		about.setOnPreferenceClickListener(this);
 		Preference mstore=findPreference("mstore");
 		mstore.setOnPreferenceClickListener(this);
 		Preference share=findPreference("share");
@@ -357,11 +355,6 @@ OnPreferenceClickListener{
 			this.finish();
 			
 			
-		}
-		else if(preference.getKey().equals("about"))
-		{
-			Intent activityIntent = new Intent(this, AboutActivity.class); 
-			this.startActivity(activityIntent); 
 		}
 		else if(preference.getKey().equals("backup"))
 		{

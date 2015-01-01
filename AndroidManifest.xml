@@ -49,12 +49,6 @@
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
         </activity>
         <activity
-            android:name=".AboutActivity"
-            android:excludeFromRecents="true"
-            android:label="@string/title_activity_about"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <activity
             android:name=".StatisticsActivity"
             android:excludeFromRecents="true"
             android:label="@string/title_activity_statistics"
