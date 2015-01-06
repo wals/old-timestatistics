@@ -1,5 +1,8 @@
 package info.walsli.timestatistics;
 
+import com.readystatesoftware.systembartint.SystemBarTintManager;
+import com.readystatesoftware.systembartint.SystemBarTintManager.SystemBarConfig;
+
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;

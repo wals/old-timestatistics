@@ -5,6 +5,10 @@ import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+
+import com.readystatesoftware.systembartint.SystemBarTintManager;
+import com.readystatesoftware.systembartint.SystemBarTintManager.SystemBarConfig;
+
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.ActionBar.LayoutParams;
@@ -14,9 +18,12 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
 
 public class MainActivity extends Activity {
@@ -72,6 +79,10 @@ public class MainActivity extends Activity {
 		Intent intent = new Intent();    
 		intent.setAction("info.walsli.timestatistics.BlankActivityFinishReceiver");    
 		this.sendBroadcast(intent); 
+		
+		//SystemBarTintManager tintManager = new SystemBarTintManager(this);
+        //tintManager.setStatusBarTintEnabled(true);
+        //tintManager.setTintColor(Color.parseColor("#FFFFFF"));
 	}
 	
 	@Override

@@ -54,16 +54,7 @@ public class StatisticsActivity extends Activity {
         
         mySharedPreferences =getSharedPreferences("info.walsli.timestatistics",Activity.MODE_MULTI_PROCESS);
 		editor = mySharedPreferences.edit();
-        if(mySharedPreferences.getBoolean("initstatisticsactivity", true))
-        {
-        	editor.putBoolean("initstatisticsactivity", false);
-        	editor.apply();
-        	new AlertDialog.Builder(this)
-        	.setMessage("帮助\n\n1.由于上个版本设计失误统计页面显示日期错误，本版本已经修复，之前数据会被正常显示\n2.折线图每点显示的都是X坐标日期那天手机的使用时间\n3.点击折线图上某一点可以看到那天使用详情，再点击屏幕任一点返回折线图界面\n4.由于个人水平限制想不到更好的方案来显示使用详情，如果大家有对界面有任何建议欢迎提出" )  
-        	.setPositiveButton("好的" ,  null )  
-        	.show();  
-        	
-        }
+
 	}
 	@Override
 	protected void onDestroy()

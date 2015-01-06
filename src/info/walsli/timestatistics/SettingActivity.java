@@ -32,6 +32,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
+import android.view.View;
 import android.widget.Toast;
 import android.preference.CheckBoxPreference;
 import android.preference.EditTextPreference;
@@ -64,6 +65,10 @@ OnPreferenceClickListener{
 		setclicklistener();
 		setchangelistener();
 		setallsecondssummary();
+		
+		
+		//getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+		
 		
 		helper = new DBHelper(getApplicationContext()); 
 	}
